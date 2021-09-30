@@ -51,6 +51,5 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'angularwebapp123'
-          slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_12BF8E6CBC264343AE64912932493F6F }}
-          package: .
+          package: ./dist/hello-world-app
